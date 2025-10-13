@@ -19,7 +19,7 @@ import org.jetbrains.annotations.Nullable;
 
 public class EntityIota extends Iota {
     public EntityIota(@NotNull Entity e) {
-        // if ENTITY does not contain the Tag then construct an Entity iota, else construct a Garbage
+        // if Entity is unable to be affected then instead construct a Garbage iota
         if (e.type.`is`(HexTags.Entities.CANNOT_AFFECT)) {
             GarbageIota();
         } else {
