@@ -1,3 +1,7 @@
+# Lost Sanctuary Changes:
+- All Dragons cannot be directly affected by a Hex. If you try to get a Dragon as an iota on the stack, it will instead push Garbage.
+- Being within a Lightning Dragon's ambit reduces Hex costs to 0.75x, and strengthens some Spell effects.
+
 # Hex Casting
 
 [Curseforge](https://www.curseforge.com/minecraft/mc-mods/hexcasting) | [Modrinth](https://modrinth.com/mod/hex-casting)
