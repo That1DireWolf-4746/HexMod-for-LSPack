@@ -84,6 +84,10 @@ public class EntityIota extends Iota {
             if (entity == null) {
                 return null;
             }
+            // if Entity is unable to be affected then instead return null
+            if (entity.getTags().contains(HexTags.Entities.CANNOT_AFFECT)) {
+                return null;
+            }
             return new EntityIota(entity);
         }
 
