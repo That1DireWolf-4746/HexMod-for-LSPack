@@ -1,1 +1,38 @@
-{}
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "create:stationary_contraption",
+      "required": false
+    },
+    {
+      "id": "create:gantry_contraption",
+      "required": false
+    },
+    {
+      "id": "create:carriage_contraption",
+      "required": false
+    },
+    {
+      "id": "create:super_glue",
+      "required": false
+    },
+    {
+      "id": "create:crafting_blueprint",
+      "required": false
+    },
+    {
+      "id": "create:seat",
+      "required": false
+    },
+    "iceandfire:ice_dragon",
+    "iceandfire:fire_dragon",
+    "iceandfire:lightning_dragon",
+    "minecraft:end_crystal",
+    "minecraft:ender_dragon",
+    "minecraft:item_frame",
+    "minecraft:painting",
+    "minecraft:leash_knot",
+    "minecraft:marker"
+  ]
+}
