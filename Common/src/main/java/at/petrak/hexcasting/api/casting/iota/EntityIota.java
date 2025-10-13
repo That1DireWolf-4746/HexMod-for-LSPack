@@ -22,7 +22,7 @@ import org.jetbrains.annotations.Nullable;
 public class EntityIota extends Iota {
     public EntityIota(@NotNull Entity e) {
         // if Entity is unable to be affected then instead construct a Garbage iota
-        if (e.type is (HexTags.Entities.CANNOT_AFFECT)) {
+        if (e.getTags().contains(HexTags.Entities.CANNOT_AFFECT)) {
             GarbageIota();
         } else {
             super(HexIotaTypes.ENTITY, e);
