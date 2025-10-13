@@ -1,6 +1,8 @@
 package at.petrak.hexcasting.api.casting.iota;
 
 import at.petrak.hexcasting.api.utils.HexUtils;
+import at.petrak.hexcasting.api.mod.HexTags;
+import at.petrak.hexcasting.api.casting.iota.GarbageIota;
 import at.petrak.hexcasting.common.lib.hex.HexIotaTypes;
 import com.samsthenerd.inline.api.InlineAPI;
 import com.samsthenerd.inline.api.data.EntityInlineData;
@@ -20,7 +22,7 @@ import org.jetbrains.annotations.Nullable;
 public class EntityIota extends Iota {
     public EntityIota(@NotNull Entity e) {
         // if Entity is unable to be affected then instead construct a Garbage iota
-        if (e.type. is (HexTags.Entities.CANNOT_AFFECT)) {
+        if (e.type is (HexTags.Entities.CANNOT_AFFECT)) {
             GarbageIota();
         } else {
             super(HexIotaTypes.ENTITY, e);
