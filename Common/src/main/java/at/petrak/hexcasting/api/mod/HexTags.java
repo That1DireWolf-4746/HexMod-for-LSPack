@@ -63,7 +63,7 @@ public class HexTags {
         public static final TagKey<EntityType<?>> STICKY_TELEPORTERS = create("sticky_teleporters");
         public static final TagKey<EntityType<?>> CANNOT_TELEPORT = create("cannot_teleport");
         public static final TagKey<EntityType<?>> CANNOT_AFFECT = create("cannot_affect");
-        public static final TagKey<EntityType<?>> CONDUIT = create("conduit");
+        public static final TagKey<EntityType<?>> CONDUIT = create("media_conduit");
         public static final TagKey<EntityType<?>> NO_BRAINSWEEPING = create("cannot_brainsweep");
 
         public static TagKey<EntityType<?>> create(String name) {
