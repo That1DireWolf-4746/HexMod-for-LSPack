@@ -41,7 +41,14 @@ interface SpellAction : Action {
         if (this.argc > stack.size)
             throw MishapNotEnoughArgs(this.argc, stack.size)
         val args = stack.takeLast(this.argc)
-        for (_i in 0 until this.argc) stack.removeLast()
+        for (_i in 0 until this.argc) {
+                stack.removeLast()
+                if (_i.type == EntityIota.TYPE) {
+                    if (_i.type.`is`(HexTags.Entities.CANNOT_TELEPORT)) {
+                        throw MishapImmuneEntity(_i)
+                    }
+                }
+        }
 
         // execute!
         val userDataMut = image.userData.copy()
