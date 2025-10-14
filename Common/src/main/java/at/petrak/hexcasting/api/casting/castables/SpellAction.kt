@@ -50,11 +50,11 @@ interface SpellAction : Action {
         for (_i in 0 until this.argc) {
                 if (stack[_i] is EntityIota && _i < this.argc) {
                     val entityToCheck = stack.getEntity(_i, this.argc)
-                    stack.add(EntityIota(entityToCheck)) // put it back on the stack
                     if (entityToCheck.type.`is`(HexTags.Entities.CANNOT_AFFECT))
                         throw MishapImmuneEntity(entityToCheck)
+                } else {
+                    stack.removeLast()
                 }
-                stack.removeLast()
         }
 
         // execute!
