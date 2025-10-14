@@ -48,13 +48,12 @@ interface SpellAction : Action {
             throw MishapNotEnoughArgs(this.argc, stack.size)
         val args = stack.takeLast(this.argc)
         for (_i in 0 until this.argc) {
-                if (stack[_i] is EntityIota) {
+                if (stack[_i] is EntityIota && _i < stack.size) {
                     val entityToCheck = stack.getEntity(_i, stack.size)
                     if (entityToCheck.type.`is`(HexTags.Entities.CANNOT_AFFECT))
                         throw MishapImmuneEntity(entityToCheck)
-                } else {
-                    stack.removeLast()
                 }
+                stack.removeLast()}
         }
 
         // execute!
