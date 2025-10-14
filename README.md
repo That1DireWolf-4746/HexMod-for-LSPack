@@ -1,6 +1,5 @@
 # Lost Sanctuary Changes:
 - All Dragons cannot be directly affected by a Spell. (Configurable, edit the cannot_affect.json file)
-- TODO Proximity to Lightning Dragons multiplies all numberical reflections by 1.1x. (Effectively this makes all spells with numerical literals 1.1x as strong. Configurable, edit the media_conduit.json file.)
 
 Could I have just made an addon instead of forking the entire Hex Casting mod? Probably. Too late now though I already made the change I wanted to make.
 
