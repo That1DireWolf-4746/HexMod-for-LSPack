@@ -10,6 +10,7 @@ import at.petrak.hexcasting.api.casting.eval.vm.SpellContinuation
 import at.petrak.hexcasting.api.casting.iota.Iota
 import at.petrak.hexcasting.api.casting.iota.EntityIota
 import at.petrak.hexcasting.api.mod.HexTags
+import at.petrak.hexcasting.api.casting.getEntity
 import at.petrak.hexcasting.api.casting.mishaps.MishapNotEnoughArgs
 import at.petrak.hexcasting.api.casting.mishaps.MishapImmuneEntity
 import at.petrak.hexcasting.api.casting.mishaps.MishapNotEnoughMedia
@@ -47,8 +48,9 @@ interface SpellAction : Action {
         for (_i in 0 until this.argc) {
                 stack.removeLast()
                 if (_i.type == EntityIota.TYPE) {
-                    if (_i.type.`is`(HexTags.Entities.CANNOT_TELEPORT)) {
-                        throw MishapImmuneEntity(_i)
+                    val entityToCheck = stack.getEntity(_i, argc)
+                    if (entityToCheck.type.`is`(HexTags.Entities.CANNOT_AFFECT)) {
+                        throw MishapImmuneEntity(entityToCheck)
                     }
                 }
         }
