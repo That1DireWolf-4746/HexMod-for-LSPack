@@ -17,6 +17,7 @@ import at.petrak.hexcasting.api.casting.mishaps.MishapNotEnoughMedia
 import at.petrak.hexcasting.common.lib.hex.HexEvalSounds
 import at.petrak.hexcasting.api.casting.mishaps.Mishap
 import net.minecraft.world.entity.Entity
+import net.minecraft.server.level.TicketType
 import net.minecraft.nbt.CompoundTag
 
 interface SpellAction : Action {
