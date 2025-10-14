@@ -49,7 +49,7 @@ interface SpellAction : Action {
         val args = stack.takeLast(this.argc)
         for (_i in 0 until this.argc) {
                 if (stack[_i] is EntityIota) {
-                    val entityToCheck = stack.getEntity(_i, this.argc + 1)
+                    val entityToCheck = stack.getEntity(_i - 1, this.argc)
                     if (entityToCheck.type.`is`(HexTags.Entities.CANNOT_AFFECT))
                         throw MishapImmuneEntity(entityToCheck)
                 }
