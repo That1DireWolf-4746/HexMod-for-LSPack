@@ -1,6 +1,8 @@
 # Lost Sanctuary Changes:
 - All Dragons cannot be directly affected by a Spell. (Configurable, edit the cannot_affect.json file)
 
+Could I have just made an addon instead of forking the entire Hex Casting mod? Probably. Too late now though I already made the change I wanted to make.
+
 # Hex Casting
 
 [Curseforge](https://www.curseforge.com/minecraft/mc-mods/hexcasting) | [Modrinth](https://modrinth.com/mod/hex-casting)
