@@ -53,7 +53,7 @@ interface SpellAction : Action {
                     if (entityToCheck.type.`is`(HexTags.Entities.CANNOT_AFFECT))
                         throw MishapImmuneEntity(entityToCheck)
                 }
-                stack.removeLast()}
+                stack.removeLast()
         }
 
         // execute!
