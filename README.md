@@ -1,6 +1,5 @@
 # Lost Sanctuary Changes:
-- All Dragons cannot be directly affected by a Hex. 
-- Being within a Lightning Dragon's ambit reduces Hex costs to 0.75x.
+- All Dragons cannot be directly affected by a Hex. (Configurable, edit the cannot_affect.json file)
 
 # Hex Casting
 
