@@ -1,5 +1,5 @@
 # Lost Sanctuary Changes:
-- All Dragons cannot be directly affected by a Hex. (Configurable, edit the cannot_affect.json file)
+- All Dragons cannot be directly affected by a Spell. (Configurable, edit the cannot_affect.json file)
 
 # Hex Casting
 
