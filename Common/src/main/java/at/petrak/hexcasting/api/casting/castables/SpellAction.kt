@@ -9,7 +9,7 @@ import at.petrak.hexcasting.api.casting.eval.vm.CastingImage
 import at.petrak.hexcasting.api.casting.eval.vm.SpellContinuation
 import at.petrak.hexcasting.api.casting.iota.Iota
 import at.petrak.hexcasting.api.casting.iota.EntityIota
-import at.petrak.hexcasting.api.casting.iota.EntityIota.getEntity
+import at.petrak.hexcasting.api.casting.iota.getEntity
 import at.petrak.hexcasting.api.casting.mishaps.MishapNotEnoughArgs
 import at.petrak.hexcasting.api.casting.mishaps.MishapImmuneEntity
 import at.petrak.hexcasting.api.casting.mishaps.MishapNotEnoughMedia
