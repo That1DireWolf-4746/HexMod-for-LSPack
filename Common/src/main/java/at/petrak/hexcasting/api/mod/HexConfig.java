@@ -92,6 +92,8 @@ public class HexConfig {
 
         List<String> DEFAULT_DIM_TP_DENYLIST = List.of("twilightforest:twilight_forest");
 
+        List<String> MEDIA_EATER_ENTITY = List.of("iceandfire:ice_dragon", "iceandfire:fire_dragon", "iceandfire:lightning_dragon");
+
         boolean DEFAULT_TRUE_NAME_HAS_AMBIT = true;
 
         default Tier opBreakHarvestLevel() {
