@@ -77,8 +77,6 @@ public class HexConfig {
         // fun fact, although dimension keys are a RegistryHolder, they aren't a registry, so i can't do tags
         boolean canTeleportInThisDimension(ResourceKey<Level> dimension);
 
-        boolean isMediaEater(ResourceKey<Entity> entity);
-
         boolean trueNameHasAmbit();
 
         double traderScrollChance();
@@ -93,8 +91,6 @@ public class HexConfig {
         boolean DEFAULT_VILLAGERS_DISLIKE_MIND_MURDER = true;
 
         List<String> DEFAULT_DIM_TP_DENYLIST = List.of("twilightforest:twilight_forest");
-
-        List<String> DEFAULT_MEDIA_EATER_ENTITY = List.of("iceandfire:ice_dragon", "iceandfire:fire_dragon", "iceandfire:lightning_dragon");
 
         boolean DEFAULT_TRUE_NAME_HAS_AMBIT = true;
 
