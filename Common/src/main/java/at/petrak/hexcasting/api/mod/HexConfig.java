@@ -77,6 +77,8 @@ public class HexConfig {
         // fun fact, although dimension keys are a RegistryHolder, they aren't a registry, so i can't do tags
         boolean canTeleportInThisDimension(ResourceKey<Level> dimension);
 
+        boolean isMediaEater(ResourceKey<Entity> entity);
+
         boolean trueNameHasAmbit();
 
         double traderScrollChance();
